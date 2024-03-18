@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kő, papír, olló játék</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-image: url("images/ko-papir-ollo-szabaly.jpg");
+      
+    }
+    #game-container {
+      margin-top: 50px;
+    }
+
+    img
+    {
+      height: 150px;
+      width:  150px;
+    }
+
+    #result
+    {
+      font-size: large;
+    }
+
+    #game-buttons {
+      margin-top: 20px;
+      float: left;
+      align-items: center;
+      
+    }
+    #game-buttons button {
+      background-color: transparent;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      cursor: pointer;
+      margin: 5px;
+      justify-content: center;
+    }
+    #game-buttons button:hover {
+      background-color: green;
+    }
+    #stats {
+      float: left;
+      text-align: left;
+      margin-left: 20px;
+      margin-right: 100px;
+    }
+  </style>
+</head>
+<body>
+  
+  <h1>Kő, papír, olló</h1>
+  <div id="game-container">
+    <div id="stats">
+      <h2>Statisztika</h2>
+      <p>Győzelem: <span id="win">0</span></p>
+      <p>Vereség: <span id="loss">0</span></p>
+      <p>Döntetlen: <span id="draw">0</span></p>
+    </div>
+    <div id="game-buttons">
+      <button id="rock"><img src="images/930.jpg"></button>
+      <button id="paper"><img src = "images/202212060413.jpg"></button>
+      <button id="scissors"><img src="images/fiskars-altalanos-ollo-21-cm-859853_ee986253.jpg"></button>
+    </div>
+  </div>
+  <div id="result"></div>
+  <script src="script.js"></script>
+</body>
+</html>
